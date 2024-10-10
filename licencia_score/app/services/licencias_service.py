@@ -63,6 +63,7 @@ async def process_file(file: UploadFile):
                 db.commit()  # Commit después de procesar cada fila
                 db.close()   # Cerrar la sesión
 
-async def fetch_top_licencias(db: Session, limit: int = 100, order: str = "mayor"):
-    order_desc = True if order == "mayor" else False
+async def fetch_top_licencias(db: Session, limit: int = 100, order: str = "desc"):    
+    order_desc = (order.lower() == "desc")
     return get_top_licencias(db, limit=limit, order_desc=order_desc)
+
