@@ -14,14 +14,14 @@ def get_top_licencias_only_score(db: Session, limit: int, order_desc: bool = Tru
 def get_top_licencias(db: Session, limit: int, order_desc: bool = True):
     if order_desc:
         query = db.query(Licencias).order_by(
-            Licencias.propensity_score.asc(),
-            Licencias.propensity_score_rn.asc(),
-            Licencias.propensity_score_otorgados_mensual.asc(),
-            Licencias.propensity_score_frecuencia_mensual.asc(),
-            Licencias.propensity_score_frecuencia_semanal.asc(),
-            Licencias.propensity_score_otorgados_semanal.asc(),
-            Licencias.propensity_score_ml.asc(),  
-            Licencias.propensity_score_rn2.asc(),
+            Licencias.propensity_score.desc(),
+            Licencias.propensity_score_rn.desc(),
+            Licencias.propensity_score_otorgados_mensual.desc(),
+            Licencias.propensity_score_frecuencia_mensual.desc(),
+            Licencias.propensity_score_frecuencia_semanal.desc(),
+            Licencias.propensity_score_otorgados_semanal.desc(),
+            Licencias.propensity_score_ml.desc(),  
+            Licencias.propensity_score_rn2.desc(),
         )
     else:
         query = db.query(Licencias).order_by(
