@@ -1,0 +1,98 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+*.pkl
+.Python
+*.log
+
+# FastAPI and related
+*.db
+*.sqlite3
+instance/
+.env
+*.env
+.venv/
+venv/
+ENV/
+env/
+.env.*
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+*.out
+*.err
+logs/
+log/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+coverage.xml
+nosetests.xml
+coverage/
+pytest_cache/
+
+# Virtual environments
+*.venv/
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# SQLAlchemy
+migrations/
+
+# PostgreSQL dumps
+*.sql
+*.dump
+
+# MySQL dumps
+*.sql
+*.dump
+
+# Editor specific (VSCode, JetBrains, etc.)
+.vscode/
+.idea/
+
+# Docker
+docker-compose*.yaml
+*.env
+Dockerfile
+*.pid
+
+# Pipenv
+Pipfile.lock
+
+# PyInstaller
+dist/
+build/
+
+# Distribution / packaging
+*.egg-info/
+.installed.cfg
+*.egg
+*.wheel
+
+# pylint
+pylint.log
+
+# Other environment related
+*.pip
+*.pipfile.lock
+
+# AWS credentials
+.aws/
